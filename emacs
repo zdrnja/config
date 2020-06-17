@@ -19,12 +19,10 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 68 :width normal)))))
 
-(setq package-check-signature nil)
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 (split-window-right)
 (load-theme 'tango-dark)
 (set-default-font "Tlwg Typo Bold 10")
-(setq-default tab-width 8)
+(setq package-check-signature nil)
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
